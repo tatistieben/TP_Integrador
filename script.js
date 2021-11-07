@@ -1,46 +1,6 @@
-/*$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-*/
-/*const cantidadEntrada = document.getElementById('cantidadEntrada')
-
-console.log("adquiriste " + cantidadEntrada + " entradas")
-
-
-const botonCalcular = document.getElementById ('botonCalcular')
-
-
-
-const categoria = document.getElementById ('seleccionCategoria')
-
-
-
-const totalCompra = document.getElementById ('totalCompra')
-
-
-function resumen(){
-
-    console.log(categoria.value)
-
-    console.log(cantidadEntrada.value)
-
-    cantidadEntrada.value
-
-    if(categoria.value == 'trainee'){
-    alert('esto es un trainee')
-    }
-    else{
-        alert('esto no es un trainee')
-    }
-
-    //totalCompra.style.display="block"
-
-    totalCompra.innerHTML= cantidadEntrada.value
-}*/
-
 //funcion de calculo de valor total de las entradas
-    
-   // esto funciona pero no aplica descuentos 
+// Sin descuentos 
+
    const valores = 200 
   
    function hacerClick() {
@@ -76,7 +36,7 @@ function resumen(){
                     alert("Debes ingresar una cantidad válida")      
              }
              else if( validarCantidad >=5)  {
-                alert("No te copes, deja entradas para el resto")      
+                alert("No puede comprar mas de 5 entradas")      
          }
      }
     
