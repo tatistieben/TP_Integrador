@@ -21,7 +21,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a id="conf" class="navbar-brand" href="#"> Conf Bs As </a>
+          <a id="conf" class="navbar-brand" href="index.html"> Conf Bs As </a>
   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -97,65 +97,49 @@
 
     <!--Inicio de formulario-->
 
-    <div class="container" class="form">
-        <div class="row g-3">
-            <div class="col">
-                <input type="text" class="form-control" class="nombreUsuario" placeholder="Nombre" aria-label="First name">
+    
+    
+<form class="form-inline mb-3">  
+
+    <div class="row g-3 mx-auto col-6 formulario">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+      </div>
+      <div class="col-12">
+          <input type="email" class="form-control" placeholder="Email" aria-label="Last name">
+        </div>
+        
+        <div class="col" id="cantidad"> Cantidad
+          <input type="number" id="cantidadEntradas" class="form-control"  placeholder="Cantidad">
+        </div>
+  
+        <div class="col-6">Categoría
+          <select id="categoria" class="form-select" aria-label="Default select example">
+              <option value="0" selected disabled>Selecionar</option>
+              <option value="1">Estudiante 80% Off</option>
+              <option value="2">Trainee 50% off</option>
+              <option value="3">Junior 15% off</option>
+            </select>
+        </div>
+        
+  </div>
+        <div class="row g-3 mx-auto col-6 formulario">
+            <div class="g-6 totalPagar" >
+              <h5 id="totalaPagar">Total a Pagar: $  </h5>
             </div>
 
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            <div class="d-grid  col-6 mx-auto">
+                <button  class="btnenviar borrarContenido" type="reset">Borrar</button>
+            </div>
+            <div class="d-grid  col-6 mx-auto">
+                <button id="calcularValor" class="btnenviar" type="button" onclick="hacerClick(), validar()">Resumen</button>
             </div>
         </div>
-
-            <div class="col">
-                <label for="inputEmail4" class="form-label"></label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Correo">
-            </div>
-
-        <div class="row g-3">
-            <div class="col" id="cantidad">
-                <label for="inputEmail4" class="form-label" id="cantidad"> Cantidad </label>
-                    <input type="number" class="form-control" placeholder="Cantidad" >
-            </div>
-    
-            <div class="col" id="categoria">
-                <label for="exampleDataList" class="form-label" id="categoria">Categoria</label>
-                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Estudiante">
-                    <datalist id="datalistOptions">
-                        <option value="Estudiante">
-                        <option value="Trainee">
-                        <option value="Junior">
-                    </datalist>
-            </div>
-            
-                <!--total a pagar-->
-            <div>    
-                <p id="total">Total a pagar: $</p>
-            </div>
-        </div>    
-
-    </div>       
-                <!--botones-->
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col">
-                <button type="button" class="botones" class="btn btn-outline-secondary"> Borrar </button>
-                </div>
-
-                <div class="col">
-                <button type="button" class="botones" class="btn btn-outline-secondary"> Resumen </button>
-                </div>
-
-            </div>
-        </div>
-                
-         
-             
-    
-
+  
+  </form>
     <!-- Fin de formulario -->
         
     <!-- Inicio de footer-->
