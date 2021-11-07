@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.card {
+    margin-top: 20px;   
+    border: solid 2px;
+}
+
+.venta {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.botones{
+    background-color: rgb(147, 212, 49);
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px 32px;
+    text-align: center; 
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#estudiante{
+    border-color: rgb(108, 173, 199);
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+#trainee {
+    border-color: skyblue;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#junior {
+    border-color: rgb(248, 233, 18);
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+#cantidad{
+    text-align: left;
+}
+
+#categoria{
+    text-align: left;
+}
+
+#total{
+    background-color: rgb(178, 227, 247);
+    border-radius: 5px;
+    padding: 20px;
+    color: blue;
+}
+
